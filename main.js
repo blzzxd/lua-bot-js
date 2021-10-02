@@ -1,6 +1,6 @@
 /*  Lua Bot                                     */
 /*  Author - Artur Asimov                       */
-/*  Github - https://github.com/artur-asimov    */
+/*  Github - https://github.com/artur-asimov/lua-bot-js    */
 
 const config = require('./config.json')
 const { Client, Intents, MessageEmbed } = require('discord.js');
