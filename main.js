@@ -62,7 +62,7 @@ client.on('messageCreate', (message) => {
                 victim.ban()
                     .then((victim) => message.channel.send(`${victim} was banned from the server.\nReason - ${args[1]}`))
                     .catch(() => message.reply('I can\'t ban that user!'));
-                victim.send(`You has been **banned** from the ${message.guild.name}!\nReason - ${args[1]}`);
+                victim.send(`You has been **banned** from the ${message.guild.name}!\nReason - ${args[1]}`).catch(() => null);
             }
             else
                 message.reply('Undefined user!');
