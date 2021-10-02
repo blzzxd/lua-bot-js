@@ -11,7 +11,7 @@ const PREFIX = config.prefix;
 // "You don't have permission to do that"
 const permissionEmbed = new MessageEmbed()
     .setColor('#0099ff')
-    .setTitle('Error!')
+    .setTitle('Oops!')
     .setDescription(`You don't have permission to use this command!`);
 
 // When bot is ready
