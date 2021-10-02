@@ -9,7 +9,7 @@ git clone https://github.com/artur-asimov/lua-bot-js.git
 ```
 
 ## Set it up
-Go to the `config.js` and paste your token and choose an prefix
+Go to the `lua-bot-js/config.js` and paste your token and choose an prefix
 ```json
 {
     "token": "your-prefix-here",
