@@ -1,5 +1,5 @@
 {
-  "name": "discord-js-bot",
+  "name": "lua-bot-js",
   "version": "1.0.0",
   "description": "Discord Bot!",
   "main": "main.js",
@@ -8,7 +8,7 @@
     "dev": "node main.js"
   },
   "keywords": [],
-  "author": "Artur Asimov",
+  "author": "author",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^13.1.0",
