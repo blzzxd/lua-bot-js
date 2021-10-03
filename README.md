@@ -1,5 +1,5 @@
 # Lua Bot
-Lua bot is an Discord.js bot. On this moment he can kick and ban users.
+Lua bot is an Discord.js bot. On this moment he can do moderation stuff like kick/mute/ban users.
 ![](https://github.com/artur-asimov/lua-bot-js/blob/main/luabotlogo.png?raw=true)
 
 ## Installation
