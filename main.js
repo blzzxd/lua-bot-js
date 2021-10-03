@@ -16,11 +16,6 @@ for(const file of commandFiles) {
     client.commands.set(command.name, command);
 }
 
-// "You don't have permission to do that"
-const permissionEmbed = new MessageEmbed()
-    .setColor('#0099ff')
-    .setTitle('Oops!')
-    .setDescription(`You don't have permission to use this command!`);
 
 // When bot is ready
 client.on('ready', () => {
