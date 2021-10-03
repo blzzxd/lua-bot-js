@@ -8,7 +8,7 @@ module.exports = {
     execute(message, args) {
         const embed = new MessageEmbed()
             .setColor('#0099ff')
-            .setTitle('Bot help')
+            .setTitle('List of commands:')
             .addFields(
                 { name: 'Get help', value: `${PREFIX}help` },
                 { name: 'Ping bot', value: `${PREFIX}ping` },
