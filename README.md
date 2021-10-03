@@ -9,11 +9,14 @@ git clone https://github.com/artur-asimov/lua-bot-js.git
 ```
 
 ## Set it up
-Go to the `lua-bot-js/config.json` and paste your token and choose an prefix
+Go to the `lua-bot-js/config.json` and paste your token in the config. Also go to the discord and check if you have developer mode enabled. If yes, copy your mute role id in config and admin role also in the config.
 ```json
+
 {
     "token": "your-token-here",
-    "prefix": "!"
+    "prefix": "!",
+    "mute-role-id": "your-mute-role-here",
+    "admin-role-id": "your-admin-role-here"
 }
 ```
 
