@@ -16,7 +16,6 @@ for(const file of commandFiles) {
     client.commands.set(command.name, command);
 }
 
-
 // When bot is ready
 client.on('ready', () => {
     console.log(`${client.user.tag} is ready!`);
@@ -51,6 +50,10 @@ client.on('messageCreate', (message) => {
             client.commands.get('help').execute(message, args);
         else if(CMD_NAME === 'bebra')
             client.commands.get('bebra').execute(message, args);
+        else if(CMD_NAME === 'mute')
+            client.commands.get('mute').execute(message, args);
+        else if(CMD_NAME === 'unmute')
+            client.commands.get('unmute').execute(message, args); 
         else
             client.commands.get('unknown').execute(message, args);
     }
