@@ -8,6 +8,7 @@ const client = new Client({ intents:  [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD
 const fs = require('fs');
 const config = require('./config.json')
 const PREFIX = config.prefix;
+const welcome = config['welcome-channel-id'];
 
 client.commands = new Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
@@ -54,6 +55,8 @@ client.on('messageCreate', (message) => {
             client.commands.get('mute').execute(message, args);
         else if(CMD_NAME === 'unmute')
             client.commands.get('unmute').execute(message, args); 
+        else if(CMD_NAME === 'avatar')
+            client.commands.get('avatar').execute(message, args);
         else
             client.commands.get('unknown').execute(message, args);
     }
@@ -66,8 +69,10 @@ client.on('messageDelete', (message) => {
 
 // When someone joins the server
 client.on('guildMemberAdd', member => {
-    member.send(`Hello, user! Welcome to the **${member.guild.name}**!\nPlease read the server rules, if any, so as not to receive punishments in the future.`)
+    member.send(`Hello, ${member.user.tag}! Welcome to the **${member.guild.name}**!\nPlease read the server rules, if any, so as not to receive punishments in the future.`)
     .catch(() => null);
+    const emb = new MessageEmbed().setColor('#12cf93').setTitle('Welcome!').setDescription(`Welcome, <@${member.user.id}>!\nPlease read the server rules, if any so as not to receive punishments in the future!`);
+    member.guild.channels.cache.get(welcome).send({embeds: [emb]});
 });
 
 client.login(config.token);
