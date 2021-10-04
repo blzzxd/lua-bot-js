@@ -7,7 +7,7 @@ module.exports = {
     description: 'what is that command?',
     execute(message, args) {
         const embed = new MessageEmbed()
-            .setColor('#0099ff')
+            .setColor('#12cf93')
             .setTitle('Unknown command')
             .setDescription(`Enter ${PREFIX}help to get list of commands!`)
         message.reply({ embeds: [embed] });

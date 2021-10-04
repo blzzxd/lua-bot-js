@@ -7,8 +7,8 @@ module.exports = {
     description: 'provides help',
     execute(message, args) {
         const embed = new MessageEmbed()
-            .setColor('#0099ff')
-            .setTitle('List of commands:')
+            .setColor('#12cf93')
+            .setTitle('List of commads:')
             .addFields(
                 { name: 'Get help', value: `${PREFIX}help` },
                 { name: 'Ping bot', value: `${PREFIX}ping` },
@@ -16,7 +16,8 @@ module.exports = {
                 { name: 'Kicking user', value: `${PREFIX}kick <user>`},
                 { name: 'Banning user', value: `${PREFIX}ban <user>`},
                 { name: 'Cleans the chat', value: `${PREFIX}clear <message count>`},
-                { name: 'Bot says your message in the chat', value: `${PREFIX}say <message>`}
+                { name: 'Bot says your message in the chat', value: `${PREFIX}say <message>`},
+                { name: 'Get your avatar image', value: `${PREFIX}avatar`}
             )
         message.reply({ embeds: [embed] });
     }

@@ -5,7 +5,7 @@ module.exports = {
     description: 'get a server information',
     execute(message, args) {
         const embed = new MessageEmbed()
-            .setColor('#0099ff')
+            .setColor('#12cf93')
             .setTitle('Server Information')
             .addFields(
                 { name: 'Server name', value: `${message.guild.name}` },

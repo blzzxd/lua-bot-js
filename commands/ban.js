@@ -3,7 +3,7 @@ const config = require('../config.json');
 const AdminRole = config['admin-role-id'];
 
 const permissionEmbed = new MessageEmbed()
-    .setColor('#0099ff')
+    .setColor('#12cf93')
     .setTitle('Oops!')
     .setDescription(`You don't have permission to use this command!`);
 
