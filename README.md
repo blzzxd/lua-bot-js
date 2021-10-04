@@ -33,3 +33,6 @@ In the `lua-bot-js/` directory run:
 ```bash
 npm run dev
 ```
+## Discord channel
+Join also our discord channel where we test our bot!
+https://discord.gg/CPZpZRpE
