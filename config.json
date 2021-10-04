@@ -2,5 +2,6 @@
     "token": "your-token-here",
     "prefix": "!",
     "mute-role-id": "your-mute-role-here",
-    "admin-role-id": "your-admin-role-here"
+    "admin-role-id": "your-admin-role-here",
+    "welcome-channel-id": "your-welcome-channel-here"
 }
