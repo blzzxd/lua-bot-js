@@ -35,4 +35,4 @@ npm run dev
 ```
 ## Discord channel
 Join also our discord channel where we test our bot!
-https://discord.gg/CPZpZRpE
+https://discord.gg/zQrKSFr77r
